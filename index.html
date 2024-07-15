@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Up Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Myntra MyStylist</h1>
+        <p>Select your style</p>
+    </div>
+    <div class="container">
+        <div class="model" id="model-container">
+            <img id="model" src="model3.jpg" alt="Model">
+        </div>
+        <div class="controls">
+            <button id="backward-btn">⬅️</button>
+            <button id="forward-btn">➡️</button>
+        </div>
+        <div class="clothes">
+            <img class="clothing-item" src="dress7.jpg" alt="Dress 1" draggable="true" ondragstart="drag(event)">
+            <img class="clothing-item" src="dress5.jpg" alt="Dress 2" draggable="true" ondragstart="drag(event)">
+            <img class="clothing-item" src="dress6.jpg" alt="Dress 3" draggable="true" ondragstart="drag(event)">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px; /* Added margin around the body */
+    background-color: #fce4ec; /* Light pink background */
+
+}
+
+.header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header h1 {
+    font-size: 2em;
+    color: #c2185b; /* Dark pink text color */
+}
+
+.header p {
+    font-size: 1.2em;
+    color: #f50057; /* Red text color */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #fff; /* White background for container */
+    padding: 20px; /* Added padding inside the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+
+}
+
+.model {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    margin-bottom: 20px;
+    border: 2px dashed #aaa;
+    background-color: #fff;
+}
+
+.model img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.clothes {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.clothing-item {
+    width: 100px;
+    height: 380px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.clothing-item:hover {
+    transform: scale(1.1);
+}
+
+.draggable-dress {
+    position: absolute;
+    bottom: 0; /* Align the dress to the bottom of the container */
+    left: 0;
+    width: 100%;
+    height: auto; /* Ensure the height is automatically adjusted */
+    max-height: 380px; /* Set a max height to match the reduced height */
+    cursor: move;
+    resize: both;
+    overflow: hidden;
+}
